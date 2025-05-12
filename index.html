@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DevLoger Games – Blog</title>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --accent-color: #e94560;
+            --background-color: #f5f5f5;
+            --text-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            background-color: #16213e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .blog-post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+        }
+
+        .blog-post .meta {
+            font-size: 0.9em;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header, nav, main, footer {
+                padding: 10px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DevLoger Games – Blog</h1>
+        <p>Updates, Ankündigungen und Einblicke in die Spieleentwicklung</p>
+    </header>
+
+    <nav>
+    	<a href="index.html">Startseite</a>
+    	<a href="wiki.html">Wiki</a>
+    	<a href="downloads.html">Downloads</a>
+    </nav>
+
+
+    <main>
+        <section class="blog-post">
+            <h2>Neues Devlog: Unser Pixel-Platformer nimmt Form an!</h2>
+            <div class="meta">Veröffentlicht am 12. Mai 2025 von Jana</div>
+            <p>Wir arbeiten derzeit an einem Retro-inspirierten Platformer mit dynamischem Leveldesign und coolem Soundtrack. Im heutigen Beitrag zeigen wir euch erste Screenshots und Gameplay-Snippets!</p>
+        </section>
+
+        <section class="blog-post">
+            <h2>DevLoger Games auf der Indie Expo 2025</h2>
+            <div class="meta">Veröffentlicht am 3. Mai 2025 von Tom</div>
+            <p>Wir waren dieses Jahr auf der Indie Expo vertreten! Lies hier unseren Rückblick und sieh dir exklusive Bilder vom Stand und unserer neuen Demo an.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 DevLoger Games | Alle Rechte vorbehalten
+    </footer>
+
+</body>
+</html>
